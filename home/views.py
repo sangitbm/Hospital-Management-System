@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from home.models import *
 
 def homepage(request):
-    return render(request, "home.html")
+    return render(request, "home/home.html")
 
 
 def doctor(request):
@@ -21,7 +21,7 @@ def doctor(request):
         'doctors': doctor_list
     }
 
-    return render(request, 'doctor.html', context)
+    return render(request, 'home/doctor.html', context)
 
 
 
@@ -39,4 +39,4 @@ def patient(request):
         'patients': patient_list
     }
 
-    return render(request, 'patient.html', context)
+    return render(request, 'home/patient.html', context)
