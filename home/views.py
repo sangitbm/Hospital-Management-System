@@ -21,7 +21,7 @@ def doctor(request):
         'doctors': doctor_list
     }
 
-    return render(request, 'Doctor.html', context)
+    return render(request, 'doctor.html', context)
 
 
 
